@@ -1,64 +1,91 @@
-# ds-project-template
+# DS-EDA-PROJECT
 
-Template for creating ds simple projects
+This is an Explorative Data Analisation Project that was done at the Data Science Bootcamp at the Spiced Academy in September 2023.
+
+The explored dataset contains information about housing (houses and sales) in King County, Seattle (USA).
+
+I extracted the data via DBeaver with SQL queries, joining the existing two tables (house details and sales details).
+The initial data set contains > 21.000 rows and > 20 columns.
+
+The client/task I chose for this EDA project is called 'William Rodriguez'.
+
+The Buyers are two persons, who want to buy two houses:
+- They want to buy one house in a country/rural area, for which they want to know the best timing when to buy.
+- They also want to buy a house in a city/central area, that is fast/easy to reach.
+- I created additional restrictions to be able to filter the data accordingly. 
+
+The project goal is to generate and answer hypotheses concerning the overall data, as well has providing recommendations for the client.
+
+
+## EDA process
+
+The process is documented in the EDA-file.
+
+---
+
+Step 0: Research Questions
+
+- What do I want to find out?
+ 
+    -> Generate Hypotheses 
+
+---
+
+Step 1: Data Understanding / Exploring
+
+- Dataframe shape
+- head, tail, columns
+- dtypes
+- describe
+- info, etc.
+
+---
+
+Step 2: Data Cleaning 
+
+- Remove unneccessary columns 
+- Identifying duplicated rows/columns
+- Renaming Columns
+- Turn integers into date-time-objects
+- Check/handle missing values
+- Look for and handle possible errors
+
+---
+
+Step 3: Data Preparation 
+
+- filter houses according to clients needs and wishes
+- Make decisions about which houses to recommend
+   to clients
+
+---
+
+Step 4: Feature Understanding & Relationships -
+		  Data Visualisation
+
+- Map locations
+- Boxplots
+- Scatterplots
+- Heatmap
+- Pairplots
+- (Multi-)Lineplots
+- Compare Top Houses 
+
+---
+
+Step 5: Answer questions about the data
+
+- When is the best time to buy the country house?
+- Show top three country and city houses
+- Insights and recommendations for client
+
+
+## Presentation
+
+The final presentation slides are located at the presentation folder.
+
 
 ## Requirements
 
 - pyenv
 - python==3.11.3
-
-## Setup
-
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
-
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
-
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
-
-### Environment
-
-This repo contains a requirements.txt file with a list of all the packages and dependencies you will need. Before you install the virtual environment, make sure to install postgresql if you haven't done it before.
-
-```bash
-brew update
-brew install postgresql
-```
-
-In order to install the environment you can use the following commands:
-
-```
-pyenv local 3.11.3
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-If you are working on Windows type the following commands in the PowerShell:
-
-```
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-The added requirements file contains all libraries and dependencies we need to execute the data cleaning notebook.
