@@ -1,23 +1,39 @@
-# DS-EDA-PROJECT
+# EDA Project - Data Analysis & Visualisation
 
-This is an Explorative Data Analisation Project that was done at the Data Science Bootcamp at the Spiced Academy in September 2023.
+This project is centered around exploratory data
+analysis techniques and presentation of results to a client.
 
-The explored dataset contains information about housing (houses and sales) in King County, Seattle (USA).
 
-I extracted the data via DBeaver with SQL queries, joining the existing two tables (house details and sales details).
-The initial data set contains > 21.000 rows and > 20 columns.
+## The data
 
-The client/task I chose for this EDA project is called 'William Rodriguez'.
+- The King County Housing dataset contains information about home sales in King County (USA).
+- The data was accessed via DBeaver and different tables were joint via SQL.
+- The initial data set contains > 21.000 rows and > 20 columns.
+- The description of the column names can be found in the `column_names.md` file.
 
-The Buyers are two persons, who want to buy two houses:
-- They want to buy one house in a country/rural area, for which they want to know the best timing when to buy.
-- They also want to buy a house in a city/central area, that is fast/easy to reach.
-- I created additional restrictions to be able to filter the data accordingly. 
+
+## The client
+
+_Note: The client is made up (any resemblance to present people is absolutely random), assumptions about answers the client would give to specific questions are therefore also made up. (i.e. How do you define a rich neighborhood? -> take the zipcodes with most houses in upper 10% percentile)._
+
+| name                | type | characteristics                                                                                                                                                                 |
+| ------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| William Rodriguez   | Buyer       | 2 people, country (best timing & non-renovated) & city house (fast & central location), wants two houses                                                                        |
+
+<br>
+
+---
+<br>
+
+I created additional restrictions to be able to filter the data accordingly. 
 
 The project goal is to generate and answer hypotheses concerning the overall data, as well has providing recommendations for the client.
 
 
-## EDA process
+<br>
+<br>
+
+# EDA process
 
 The process is documented in the EDA-file.
 
@@ -86,6 +102,7 @@ The final presentation slides are located at the presentation folder.
 
 
 ## Requirements
+The requirements can be found in the 'requirements.txt' file
 
 - pyenv
 - python==3.11.3
