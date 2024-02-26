@@ -7,7 +7,7 @@ analysis techniques and presentation of results to a client.
 ## The data
 
 - The King County Housing dataset contains information about home sales in King County (USA).
-- The data was accessed via DBeaver and different tables were joint via SQL.
+- The data was accessed via DBeaver and different tables were joined via SQL.
 - The initial data set contains > 21.000 rows and > 20 columns.
 - I created additional restrictions to the clients characteristics to be able to filter the data accordingly. 
 - The description of the column names can be found in the `column_names.md` file.
